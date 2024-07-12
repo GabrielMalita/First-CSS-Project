@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: rgb(51, 51, 51);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.header, .access, .workflow, .features, .partners-section {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.header {
+  background: url("./images/bg-header-desktop.png") no-repeat center center/cover;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.header h1, .access h2, .workflow h2, .partners-section h2, .features h2 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  color: rgb(76, 84, 93);
+  font-weight: 600;
+}
+
+.header p, .features p, .access p, .workflow p, .partners-section p {
+  color: rgb(159, 174, 178);
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-ios {
+  background: rgb(38, 186, 164);
+}
+
+.btn-ios:hover {
+  background: rgb(93, 204, 204);
+}
+
+.btn-mac {
+  background: rgb(97, 115, 255);
+}
+
+.btn-mac:hover {
+  background: rgb(136, 150, 253);
+}
+
+.btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.features-content, .workflow-features, .partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.partners{
+  margin-bottom: 13rem;
+}
+
+.imagesFeature img, .access img {
+  width: 100%;
+  max-width: 60rem;
+}
+
+.features-info, .workflow-feature {
+  text-align: left;
+  padding-left: 2rem;
+  max-width: 30rem;
+}
+
+.features-info {
+  text-align: left;
+  padding-left: 2rem;
+  max-width: 30rem;
+}
+
+.workflow-feature {
+  text-align: center;
+  padding: 1rem;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 30rem;
+}
+
+.feature-info h3, .workflow-feature h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(77, 83, 89);
+}
+
+.feature-info p, .workflow-feature p, .details {
+  font-size: 1.6rem;
+  color: rgb(213, 219, 219);
+}
+
+.footer {
+  background: #f5f6f8;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 5rem;
+}
+
+.partners img{
+  padding: 0rem 3rem;
+}
+
+.workflow-feature img{
+  margin-bottom: 4rem;
+}
+
+.footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer nav a {
+  color: rgb(150, 154, 160);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.footer nav a:hover {
+  color: rgb(93, 204, 204);
+}
+.description{
+  margin: 2rem 15rem 0rem 15rem;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.footer .social img {
+  width: 3rem;
+  transition: filter 0.3s;
+}
+.install a{
+  margin-bottom: 4.562rem;
+}
+
+.footer .social img:hover {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(23%) saturate(2178%) hue-rotate(136deg) brightness(93%) contrast(85%);
+}
+
+@media (max-width: 1170px) {
+  .header h1, .features h2, .access h2, .workflow h2, .partners-section h2 {
+    font-size: 3rem;
+  }
+
+  .header p, .features p, .access p, .workflow p, .partners-section p {
+    font-size: 1.4rem;
+  }
+
+  .description{
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  .features-info {
+    text-align: center;
+    padding-left: 2rem;
+    max-width: 30rem;
+  }
+
+  .features-content, .workflow-features, .partners {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners img{
+    padding: 3rem 0rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .header h1, .features h2, .access h2, .workflow h2, .partners-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .header p, .features p, .access p, .workflow p, .partners-section p {
+    font-size: 1.2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin-bottom: 3.5rem;
+    align-self: center;
+  }
+
+  .footer nav {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .footer, .social {
+    justify-content: center;
+    margin-top: 1rem;
+    align-self: center;
+  }
+
+  .footer .social img {
+    margin: 0 1rem;
+  }
+}
